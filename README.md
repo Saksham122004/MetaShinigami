@@ -1,6 +1,6 @@
-# File Metadata Extractor
+# MetaShinigami - Universal Metadata Extractor
 
-A comprehensive Python script for extracting metadata from various file types, including images, PDFs, documents, and media files.
+A comprehensive tool for extracting metadata from various file types, available in both command-line and graphical user interface versions.
 
 ## Features
 
@@ -15,6 +15,9 @@ A comprehensive Python script for extracting metadata from various file types, i
   - **Excel Files**: Workbook properties
   - **Media Files**: Audio/video metadata (duration, bitrate, tags)
 - **Universal Metadata**: Advanced extraction using hachoir for unsupported formats
+- **Multiple Interfaces**: Command-line script and GUI application
+- **Output Formats**: JSON, CSV, and text formats
+- **Export Capabilities**: Save results to files
 
 ## Requirements
 
@@ -23,7 +26,7 @@ A comprehensive Python script for extracting metadata from various file types, i
 
 ## Installation
 
-1. Clone or download the script
+1. Clone or download the repository
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
@@ -32,9 +35,39 @@ A comprehensive Python script for extracting metadata from various file types, i
 
 ## Usage
 
+### Command Line Interface
+
 Run the script with a file path as argument:
 
 ```bash
+python MetaShinigami file.jpg
+```
+
+### Graphical User Interface
+
+For a user-friendly interface:
+
+```bash
+python gui.py
+```
+
+The GUI provides:
+- File browser for selecting files
+- Output format selection (JSON/CSV/Text)
+- Scrollable results display
+- Save to file functionality
+
+### Output Formats
+
+- **JSON** (default): Structured metadata
+- **CSV**: Tabular format for spreadsheets
+- **Text**: Human-readable hierarchical format
+
+### Command Line Options
+
+```bash
+python MetaShinigami file.jpg --format csv --out results.csv
+```
 python MetaShinigami.py /path/to/file.jpg
 ```
 
