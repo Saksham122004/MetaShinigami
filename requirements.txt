@@ -6,3 +6,5 @@ pytesseract
 python-docx
 python-magic-bin
 hachoir
+customtkinter
+ python-magic
